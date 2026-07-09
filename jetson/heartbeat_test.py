@@ -4,7 +4,7 @@ from pymavlink import mavutil
 # Change '/dev/ttyUSB0' to match your actual Jetson connection port
 # 57600 is the exact Baud rate of your telemetry link
 print("Connecting to ATOMRC Flight Controller...")
-connection = mavutil.mavlink_connection('/dev/ttyUSB0', baud=57600)
+connection = mavutil.mavlink_connection('/dev/ttyACM0', baud=57600)
 
 print("Waiting for autopilot heartbeat...")
 while True:
