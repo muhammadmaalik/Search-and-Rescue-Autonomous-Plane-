@@ -1,5 +1,15 @@
-venv/
-runs/
+# Ignore massive weights and compiled engines
+*.pt
+*.engine
+*.onnx
+
+# Ignore raw video files
 *.mp4
 *.avi
-*.pt
+*.mov
+
+# Ignore heavy training datasets and run logs
+wilderness_dataset/
+runs/
+__pycache__/
+venv/
